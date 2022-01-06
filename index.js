@@ -82,17 +82,3 @@ app.listen(4124, () => {
     console.log(`Server started on port 4124`);
 })
  
-// sendText('9209390338', 'This is a test msg.  123').catch(console.error);
-
-    // const consumer = new RelayConsumer({
-    //     project: process.env.PROJECT_ID,
-    //     token: process.env.API_TOKEN,
-    //     contexts: ['txt'],
-    //     onIncomingMessage: async (message) => {
-    //         // Handle the inbound message here..
-    //         console.log('Received message', message.id, message.context);
-    //         console.log('[TXT] ', message.body);
-    //     }
-    // })
-
-    // consumer.run()
