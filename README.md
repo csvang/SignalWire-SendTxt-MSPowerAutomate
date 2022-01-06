@@ -20,6 +20,7 @@ Proof of concept using [SignalWire's Relay Messaging API](https://docs.signalwir
         MY_NUMBER=
         ```
 3.  `npm start`
+    - Server is on port `4124`.
 
 ### SignalWire
 1. From the SignalWire setup site, on the left navigation, click on `API`.  The Project ID and API Token can be retrieved (or created) on this page.
@@ -30,7 +31,16 @@ Proof of concept using [SignalWire's Relay Messaging API](https://docs.signalwir
 
 ### MS Power Automate
 1.  Create a custom connector by [importing from a Postman collection](https://docs.microsoft.com/en-us/connectors/custom-connectors/define-postman-collection).
-    - The example Postman collection can be viewed [MS Power Automate/SignalWire-txt-poc.postman_collection.json](/MS Power Automate/SignalWire-txt-poc.postman_collection.json)
+    - The example Postman collection can be viewed at [MS Power Automate/SignalWire-txt-poc.postman_collection.json](https://github.com/csvang/SignalWire-SendTxt-MSPowerAutomate/blob/master/MS%20Power%20Automate/SignalWire-txt-poc.postman_collection.json)
+
+2. Create a new Flow.
+
+3. Add action as needed to integrate with Power Automate.
+
+## Example Implementation
+
+![Power Automate flow diagram](/screenshots/02.png)
+
 ## Notes
 - Sign up for a trial at [SignalWire.com](https://www.signalwire.com)
 - Utilized `ngrok` to serve index.js.
