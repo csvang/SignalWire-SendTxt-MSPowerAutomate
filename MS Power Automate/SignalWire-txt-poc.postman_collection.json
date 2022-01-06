@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "96cf6712-5957-47e6-92e6-8f5fe27e5460",
+		"name": "SignalWire-txt-poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Text",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"to\": \"0001234567\",\n\t\"message\": \"Hello World!\"\n}"
+				},
+				"url": {
+					"raw": "http://f3d4-2603-6000-c343-386c-bc1d-c24c-e9d3-1dbf.ngrok.io",
+					"protocol": "http",
+					"host": [
+						"f3d4-2603-6000-c343-386c-bc1d-c24c-e9d3-1dbf",
+						"ngrok",
+						"io"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
