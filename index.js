@@ -30,12 +30,6 @@ app.post("/", (req, res) => {
             success: true
         });
     }
-
-    return res.send({
-        to: to,
-        message: message,
-        success: true
-    });
 })
 
 async function sendText(toPhone, message) {
